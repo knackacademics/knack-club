@@ -1,0 +1,31 @@
+#mainNav {
+    margin-bottom: 0;
+}
+
+body{
+    background-image: url("../img/landing_background.png");
+}
+
+.main-content{
+	height: 10%;
+	margin: 15% 55%;
+	text-align: center;
+	visibility: none;
+}
+
+.ui.inverted.secondary.menu {
+    margin-bottom: 20px;
+}
+
+.ui.tab.segment.active {
+    margin-top: 0;
+    height: 100%;
+    width:60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: ;
+}
+
+.ui.items>.item>.content a:not(.ui) {
+    display: block;
+}
