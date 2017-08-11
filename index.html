@@ -4,33 +4,148 @@
     <meta charset="UTF-8">
     <title>Knack Academics Student Resources</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/12505212.css" id="acuity-button-styles">
     <link rel="stylesheet" href="./css/style.css" type="text/css"/>
   </head>
   <body>
     <!--Main nav bar locked to top, act to show/hide tabbed content-->
-  	<div id="mainNav" class="ui transition fade in tabular menu inverted">
+    <div id="mainNav" class="ui transition fade in tabular menu inverted">
         <div class="header item">
-          <a href="http://knackclub.com">Knack Academics Student Resources</a>
         </div>
           <a class="item" data-tab="math-main">
-            <i class="superscript icon"></i>
+            <i class="calculator icon"></i>
             <p>Mathematics</p>
           </a>
-          
-          <a class="item" data-tab ="chem-main">
+
+          <a class="item" data-tab="chem-main">
             <i class="theme icon"></i>
             <p>Chemistry</p>
           </a>
-          
+
           <a class="item" data-tab="phys-main">
             <i class="space shuttle icon"></i>
             <p>Physics</p>
           </a>
+
+          <a class="item" data-tab="calc-main">
+            <i class="superscript icon"></i>
+            <p>Calculus</p>
+          </a>
+
           <div class="right menu">
             <div class="item">
-              <a href="http://www.knackacademics.com">Return to KA.com</a>
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=12505212" target="_blank" class="acuity-embed-button right-nav-button" id="acuity-button">Get Extra Help</a>
+            </div>
+            <div class="item">
+              <a class="right-nav-button" id="ka-button" href="http://www.knackacademics.com">KnackAcademics.com</a>
             </div>
           </div>
+    </div>
+
+<!--======================================================-->
+              <!--Main Page Content-->
+<!--======================================================-->
+
+<div class="ui active tab" data-tab="main">
+  <div class="ui text container main-content" style="margin: 15% 55%;">
+    <div class="ui piled segment">
+      <img src="./img/knackacademics.png" alt="" id="main-logo">
+      <h1 class="ui header">
+        Welcome to our free resources page
+      </h1>
+      <h2>
+        Choose from Math, Chemistry, or Physics from the menu above
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<!--======================================================-->
+              <!--Calc Content Main Nav -->
+<!--======================================================-->
+
+    <div class="ui transition fade in tab" data-tab="calc-main">
+      <div class="context1">
+        <div class="ui transition fade in tab active segment" style="margin-top: 2em">
+          <div class="ui container text">
+            <div class="ui divided items">
+
+              <div class="item">
+                <div class="content">
+                  <div class="header">General Information and Cheat Sheet</div>
+                  <div class="extra">
+                    <div class="ui buttons">
+                      <a href="./content/calc/general.pdf" target="_blank" class="ui button">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content">
+                  <div class="header">Chapter 1 - Limits</div>
+                  <div class="description">
+                    <!-- <p>Examining the relationship of unknown, but related rates</p> -->
+                  </div>
+                  <div class="extra">
+                    <div class="ui buttons">
+                      <a href="./content/calc/u1-lim-notes.pdf" class="ui button" target="_blank">Notes</a>
+                      <a href="./content/calc/u1-lim-hmwk.pdf" class="ui button" target="_blank">Homework</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content">
+                  <div class="header">Chapter 2 - Derivatives</div>
+                  <div class="description">
+                    <!-- <p>Examining the relationship of unknown, but related rates</p> -->
+                  </div>
+                  <div class="extra">
+                    <div class="ui buttons">
+                      <a href="./content/calc/u2-deriv-notes.pdf" class="ui button" target="_blank">Notes</a>
+                      <a href="./content/calc/u2-deriv-hmwk.pdf" class="ui button" target="_blank">Homework</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content">
+                  <div class="header">Chapter 3 - Applications of Derivatives</div>
+                  <div class="description">
+                    <!-- <p>Examining the relationship of unknown, but related rates</p> -->
+                  </div>
+                  <div class="extra">
+                    <div class="ui buttons">
+                      <a href="./content/calc/u2-deriv-apps-notes.pdf" class="ui button" target="_blank">Notes</a>
+                      <a href="./content/calc/u2-deriv-apps-hmwk.pdf" class="ui button" target="_blank">Homework</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content">
+                  <div class="header">Chapter 4 - Integrals</div>
+                  <div class="description">
+                    <!-- <p>Examining the relationship of unknown, but related rates</p> -->
+                  </div>
+                  <div class="extra">
+                    <div class="ui buttons">
+                      <a href="./content/calc/u3-integ-notes.pdf" class="ui button" target="_blank">Notes</a>
+                      <a href="./content/calc/u3-integ-hmwk.pdf" class="ui button" target="_blank">Homework</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 <!--======================================================-->
@@ -58,7 +173,7 @@
 		    </div>
 		  </div>
         </div>
-        
+
         <!--Math 8 Content and navigation-->
         <div class="ui transition fade in tab segment" data-tab="m8">
           <!--Main container for all the content on the page-->
@@ -68,8 +183,8 @@
               <!--Each Chapter will be its own div with class="item"-->
               <div class="item">
                 <div class="content">
-                  <div class="header"> 
-                  	<a href="./content/math/math-8/general.pdf">Math 8 General Information Sheet</a>
+                  <div class="header">
+                  	<a href="./content/math/math-8/general.pdf" target="_blank">Math 8 General Information and Cheat Sheet</a>
                   </div>
                   <div class="description">
                     <p>A cheat sheet with all the information you need to succeed in Math 8</p>
@@ -85,11 +200,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u2-rates-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u2-rates-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u2-rates-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 3 Pythagorean Theorem</div>
@@ -98,11 +213,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u3-pythag-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u3-pythag-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u3-pythag-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 4 Fractions, Decimals, and Percentages</div>
@@ -111,11 +226,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u4-fracdecperc-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u4-fracdecperc-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u4-fracdecperc-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header"> Chapter 5 Fraction Operations</div>
@@ -124,11 +239,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u5-fracops-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u5-fracops-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u5-fracops-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 6 Area</div>
@@ -137,11 +252,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u6-area-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u6-area-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u6-area-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 7 Volume</div>
@@ -150,11 +265,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u7-volume-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u7-volume-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u7-volume-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 8 Order of Operations - BEDMAS</div>
@@ -163,11 +278,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u8-bedmas-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u8-bedmas-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u8-bedmas-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 9 Linear Relations</div>
@@ -180,7 +295,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 10 Algebra</div>
@@ -197,7 +312,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="content">
                   <div class="header">Chapter 11 Probability</div>
@@ -206,14 +321,14 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-8/u11-probability-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-8/u11-probability-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-8/u11-probability-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>  
-          
+        </div>
+
         <div class="ui transition fade in tab segment" data-tab="m9">
           <div class="ui container text">
             <!--will divide each item into their own segment with a horizontal break-->
@@ -225,7 +340,7 @@
                   <img src="./img/knackacademics.png">
                 </div>
                 <div class="content">
-                  <div class="header"> 
+                  <div class="header">
                   	<a href="./content/math/math-9/general.pdf">Math 9 General Information Sheet</a>
                   </div>
                   <div class="description">
@@ -245,11 +360,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-9/u1-exp-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-9/u1-exp-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-9/u1-exp-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -261,11 +376,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-9/u2-polyops-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-9/u2-polyops-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-9/u2-polyops-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -277,11 +392,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-9/u3-linrel-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-9/u3-linrel-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-9/u3-linrel-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -293,11 +408,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-9/u4-lineq-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-9/u4-lineq-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-9/u4-lineq-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -309,14 +424,14 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-9/u5-circles-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-9/u5-circles-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-9/u5-circles-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="ui transition fade in tab segment" data-tab="m10">
           <div class="ui container text">
             <!--will divide each item into their own segment with a horizontal break-->
@@ -328,7 +443,7 @@
                   <img src="./img/knackacademics.png">
                 </div>
                 <div class="content">
-                  <div class="header"> 
+                  <div class="header">
                   	<a href="./content/math/math-10/general.pdf">Math 10 General Information Sheet</a>
                   </div>
                   <div class="description">
@@ -348,11 +463,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u1-measure-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-10/u1-measure-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-10/u1-measure-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -364,11 +479,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u2-sa-vol-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-10/u1-sa-vol-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-10/u1-sa-vol-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -380,11 +495,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u3-trig-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-10/u3-trig-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-10/u3-trig-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -396,11 +511,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u4-radicals-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-10/u4-radicals-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-10/u4-radicals-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -412,11 +527,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u5-polynom-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-10/u5-polynom-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-10/u5-polynom-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -428,7 +543,7 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u6-linrel-notes.pdf" target="_blank">Linear Relations Notes</a>
-                    <a href="./content/math/math-10/u6-linrel-hmwk.pdf" target="_blank">Linear Relations Homework</a>  
+                    <a href="./content/math/math-10/u6-linrel-hmwk.pdf" target="_blank">Linear Relations Homework</a>
                   </div>
                 </div>
               </div>
@@ -445,11 +560,11 @@
 
                   <div class="extra">
                     <a href="./content/math/math-10/u6-graph-linrel-notes.pdf" target="_blank">Graphing Linear Relations Notes</a>
-                    <a href="./content/math/math-10/u6-graph-linrel-hmwk.pdf" target="_blank">Graphing Linear Relations Homework</a>  
+                    <a href="./content/math/math-10/u6-graph-linrel-hmwk.pdf" target="_blank">Graphing Linear Relations Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -461,21 +576,21 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u7-systems-solve-notes.pdf" target="_blank">Solving Systems of Eq's Notes</a>
-                    <a href="./content/math/math-10/u7-systems-solve-hmwk.pdf" target="_blank">Solving Systems of Eq's Homework</a>  
+                    <a href="./content/math/math-10/u7-systems-solve-hmwk.pdf" target="_blank">Solving Systems of Eq's Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u7-systems-graph-notes.pdf" target="_blank">Graphing Systems of Eq's Notes</a>
-                    <a href="./content/math/math-10/u7-systems-graph-hmwk.pdf" target="_blank">Graphing Systems of Eq's Homework</a>  
+                    <a href="./content/math/math-10/u7-systems-graph-hmwk.pdf" target="_blank">Graphing Systems of Eq's Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-10/u7-systems-wordprob-hmwk.pdf" target="_blank">Word Problem Homework</a>
                   </div>
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
-        
+
         <div class="ui transition fade in tab segment" data-tab="m11">
           <div class="ui container text">
             <!--will divide each item into their own segment with a horizontal break-->
@@ -487,7 +602,7 @@
                   <img src="./img/knackacademics.png">
                 </div>
                 <div class="content">
-                  <div class="header"> 
+                  <div class="header">
                   	<a href="./content/math/math-11/general.pdf">Pre-Calc 11 General Information Sheet</a>
                   </div>
                   <div class="description">
@@ -507,11 +622,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u1-seq-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u1-seq-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u1-seq-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -523,15 +638,15 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u2-trig-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u2-trig-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u2-trig-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u2-triglaws-notes.pdf" target="_blank">Trig Laws Notes</a>
-                    <a href="./content/math/math-11/u2-triglaws-hmwk.pdf" target="_blank">Trig Laws Homework</a> 
+                    <a href="./content/math/math-11/u2-triglaws-hmwk.pdf" target="_blank">Trig Laws Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -543,11 +658,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u3-quadrat-notes.pdf" target="_blank">Graphing Notes</a>
-                    <a href="./content/math/math-11/u3-quadrat-hmwk.pdf" target="_blank">Graphing Homework</a>  
+                    <a href="./content/math/math-11/u3-quadrat-hmwk.pdf" target="_blank">Graphing Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u3-quadrat-wordprob-notes.pdf" target="_blank">Graphing Word Problem Notes</a>
-                    <a href="./content/math/math-11/u3-quadrat-wordprob-hmwk.pdf" target="_blank">Graphing Word Problem Homework</a>  
+                    <a href="./content/math/math-11/u3-quadrat-wordprob-hmwk.pdf" target="_blank">Graphing Word Problem Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u4-quadeq-notes.pdf" target="_blank">Quadratic Equation Notes</a>
@@ -557,10 +672,10 @@
                     <a href="./content/math/math-11/u4-quadeq-wordprob-notes.pdf" target="_blank">Quadratic Equation Word Problems Notes</a>
                     <a href="./content/math/math-11/u4-quadeq-wordprob-hmwk.pdf" target="_blank">Quadratic Equation Word Problems Homework</a>
                   </div>
-                  
+
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -572,11 +687,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u5-radical-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u5-radical-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u5-radical-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -588,15 +703,15 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u6-rational-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u6-rational-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u6-rational-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u6-rational-wordprob-notes.pdf" target="_blank">Word Problem Notes</a>
-                    <a href="./content/math/math-11/u6-rational-wordprob-hmwk.pdf" target="_blank">Word Problem Homework</a>  
+                    <a href="./content/math/math-11/u6-rational-wordprob-hmwk.pdf" target="_blank">Word Problem Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -608,11 +723,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u7-absval-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u7-absval-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u7-absval-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -624,11 +739,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-11/u8-systems-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-11/u8-systems-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-11/u8-systems-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
-              
+              </div>
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -647,7 +762,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="ui transition fade in tab segment" data-tab="m12">
           <div class="ui container text">
             <!--will divide each item into their own segment with a horizontal break-->
@@ -659,7 +774,7 @@
                   <img src="./img/knackacademics.png">
                 </div>
                 <div class="content">
-                  <div class="header"> 
+                  <div class="header">
                   	<a href="./content/math/math-12/general.pdf">Pre-Calc 12 General Information Sheet</a>
                   </div>
                   <div class="description">
@@ -679,12 +794,12 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u1-transform-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-12/u1-transform-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-12/u1-transform-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
-              
+
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -696,11 +811,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u3-polynom-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-12/u3-polynom-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-12/u3-polynom-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -712,19 +827,19 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u4-trig-notes.pdf" target="_blank">Intro Notes</a>
-                    <a href="./content/math/math-12/u4-trig-hmwk.pdf" target="_blank">Intro Homework</a>  
+                    <a href="./content/math/math-12/u4-trig-hmwk.pdf" target="_blank">Intro Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u5-trigfxn-notes.pdf" target="_blank">Trig Functions Notes</a>
-                    <a href="./content/math/math-12/u5-trigfxn-hmwk.pdf" target="_blank">Trig Functions Homework</a>  
+                    <a href="./content/math/math-12/u5-trigfxn-hmwk.pdf" target="_blank">Trig Functions Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u6-trigident-notes.pdf" target="_blank">Trig Identities Notes</a>
-                    <a href="./content/math/math-12/u6-trigident-hmwk.pdf" target="_blank">Trig Identities Homework</a>  
+                    <a href="./content/math/math-12/u6-trigident-hmwk.pdf" target="_blank">Trig Identities Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -736,15 +851,15 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u7-exp-notes.pdf" target="_blank">Exponents Notes</a>
-                    <a href="./content/math/math-12/u7-exp-hmwk.pdf" target="_blank"> Exponents Homework</a>  
+                    <a href="./content/math/math-12/u7-exp-hmwk.pdf" target="_blank"> Exponents Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u8-log-notes.pdf" target="_blank">Logarithms Notes</a>
-                    <a href="./content/math/math-12/u8-log-hmwk.pdf" target="_blank">Logarithms Homework</a>  
+                    <a href="./content/math/math-12/u8-log-hmwk.pdf" target="_blank">Logarithms Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -756,7 +871,7 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u9-rational-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-12/u9-rational-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-12/u9-rational-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
@@ -772,11 +887,11 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u10-fxn-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-12/u10-fxn-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-12/u10-fxn-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
@@ -788,17 +903,17 @@
                   </div>
                   <div class="extra">
                     <a href="./content/math/math-12/u11-combin-notes.pdf" target="_blank">Notes</a>
-                    <a href="./content/math/math-12/u11-combin-hmwk.pdf" target="_blank">Homework</a>  
+                    <a href="./content/math/math-12/u11-combin-hmwk.pdf" target="_blank">Homework</a>
                   </div>
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    
+
+
 <!--======================================================-->
               <!--Chemistry Content Main Nav -->
 <!--======================================================-->
@@ -820,7 +935,7 @@
 		    </div>
 		  </div>
         </div>
-          
+
           <div class="ui transition fade in tab segment" data-tab="c11">
             <div class="ui container text">
               <div class="ui divided items">
@@ -828,7 +943,7 @@
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 1 Atoms and Compounds</div>
                     <div class="description">
@@ -836,16 +951,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u1-atoms-notes.pdf" target="_blank">Atoms and Compounds Notes</a>
-                      <a href="./content/chem/chem-11/u1-atoms-hmwk.pdf" target="_blank">Atoms and Compounds Homework</a>  
+                      <a href="./content/chem/chem-11/u1-atoms-hmwk.pdf" target="_blank">Atoms and Compounds Homework</a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="item">
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 2 Periodic Trends</div>
                     <div class="description">
@@ -853,16 +968,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u2-ptable-notes.pdf" target="_blank">Periodic Trends Notes</a>
-                      <a href="#">Periodic Trends Homework - Coming Soon!</a>  
+                      <a href="#">Periodic Trends Homework - Coming Soon!</a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="item">
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 3 Chemical Reactions and Equations</div>
                     <div class="description">
@@ -870,16 +985,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u3-eq-notes.pdf" target="_blank">Chemical Reactions and Equations Notes</a>
-                      <a href="./content/chem/chem-11/u3-eq-hmwk.pdf" target="_blank">Chemical Reactions and Equations Homework</a>  
+                      <a href="./content/chem/chem-11/u3-eq-hmwk.pdf" target="_blank">Chemical Reactions and Equations Homework</a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="item">
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 4 Moles and Particles</div>
                     <div class="description">
@@ -887,16 +1002,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u4-moles-notes.pdf" target="_blank">Moles and Particles Notes</a>
-                      <a href="./content/chem/chem-11/u4-moles-hmwk.pdf" target="_blank">Moles and Particles Homework</a>  
+                      <a href="./content/chem/chem-11/u4-moles-hmwk.pdf" target="_blank">Moles and Particles Homework</a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="item">
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 5 Stoichiometry</div>
                     <div class="description">
@@ -904,16 +1019,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u5-stoich-notes.pdf" target="_blank">Stoichiometry Notes</a>
-                      <a href="./content/chem/chem-11/u5-stoich-hmwk.pdf" target="_blank">Stoichiometry Homework</a>  
+                      <a href="./content/chem/chem-11/u5-stoich-hmwk.pdf" target="_blank">Stoichiometry Homework</a>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="item">
                   <div class="image">
                     <img src="./img/knackacademics.png">
                   </div>
-                  
+
                   <div class="content">
                     <div class="header">Chapter 6 Organic Compounds</div>
                     <div class="description">
@@ -921,16 +1036,16 @@
                     </div>
                     <div class="extra">
                       <a href="./content/chem/chem-11/u6-ochem-notes.pdf" target="_blank">Organic Compounds Notes</a>
-                      <a href="./content/chem/chem-11/u6-ochem-hmwk.pdf" target="_blank">Organic Compounds Homework</a>  
+                      <a href="./content/chem/chem-11/u6-ochem-hmwk.pdf" target="_blank">Organic Compounds Homework</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
-    
+
 <!--======================================================-->
               <!--Physics Content Main Nav -->
 <!--======================================================-->
@@ -952,7 +1067,7 @@
 		    	</div>
 		  	</div>
         </div>
-          
+
         <div class="ui transition fade in tab segment" data-tab="p11">
           <div class="ui container text">
             <div class="ui divided items">
@@ -960,7 +1075,7 @@
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 1 Physics 10 Review</div>
                   <div class="description">
@@ -972,12 +1087,12 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 2 Kinematics</div>
                   <div class="description">
@@ -985,16 +1100,16 @@
                   </div>
                   <div class="extra">
                     <a href="./content/phys/phys-11/u2-kin-notes.pdf" target="_blank">Kinematics Notes</a>
-                    <a href="./content/phys/phys-11/u2-kin-hmwk.pdf" target="_blank">Kinematics Homework</a>  
+                    <a href="./content/phys/phys-11/u2-kin-hmwk.pdf" target="_blank">Kinematics Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 3 & 4 Forces</div>
                   <div class="description">
@@ -1002,7 +1117,7 @@
                   </div>
                   <div class="extra">
                     <a href="./content/phys/phys-11/u3-dyn-notes.pdf" target="_blank">Forces Notes</a>
-                    <a href="./content/phys/phys-11/u3-dyn-hmwk.pdf" target="_blank">Forces Homework</a>  
+                    <a href="./content/phys/phys-11/u3-dyn-hmwk.pdf" target="_blank">Forces Homework</a>
                   </div>
                   <div class="extra">
                     <a href="./content/phys/phys-11/u4-equil-notes.pdf" target="_blank">Force Equilibrium Notes</a>
@@ -1010,12 +1125,12 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 5 Momentum</div>
                   <div class="description">
@@ -1023,16 +1138,16 @@
                   </div>
                     <div class="extra">
                     <a href="./content/phys/phys-11/u5-moment-notes.pdf" target="_blank">Momentum Notes</a>
-                    <a href="./content/phys/phys-11/u5-moment-hmwk.pdf" target="_blank">Momentum Homework</a>  
+                    <a href="./content/phys/phys-11/u5-moment-hmwk.pdf" target="_blank">Momentum Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 6 Work and Power</div>
                   <div class="description">
@@ -1040,16 +1155,16 @@
                   </div>
                   <div class="extra">
                     <a href="./content/phys/phys-11/u6-work-notes.pdf" target="_blank">Work and Power Notes</a>
-                    <a href="./content/phys/phys-11/u6-work-hmwk.pdf" target="_blank">Work and Power Homework</a>  
+                    <a href="./content/phys/phys-11/u6-work-hmwk.pdf" target="_blank">Work and Power Homework</a>
                   </div>
                 </div>
               </div>
-              
+
               <div class="item">
                 <div class="image">
                   <img src="./img/knackacademics.png">
                 </div>
-                
+
                 <div class="content">
                   <div class="header">Chapter 7 Circular Motion</div>
                   <div class="description">
@@ -1057,36 +1172,19 @@
                   </div>
                   <div class="extra">
                     <a href="./content/phys/phys-11/u7-circ-notes.pdf" target="_blank">Circular Motion Notes</a>
-                    <a href="./content/phys/phys-11/u7-circ-hmwk.pdf" target="_blank">Circular Motion Homework</a>  
+                    <a href="./content/phys/phys-11/u7-circ-hmwk.pdf" target="_blank">Circular Motion Homework</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
-
-
-<!--======================================================-->
-              <!--Main Page Content-->
-<!--======================================================-->
-
-<div class="ui active tab" data-tab="main">
-  <div class="ui text container main-content" style="margin: 15% 55%;">
-    <div class="ui piled segment">
-      <h1 class="ui header">
-        Welcome to our free resources page
-      </h1>
-      <h2>
-        Choose from Math, Chemistry, or Physics from the menu above
-      </h2>
-    </div>
-  </div>
-</div>
 
 <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://embed.acuityscheduling.com/embed/button/12505212.js" async=""></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>

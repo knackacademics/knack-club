@@ -23,9 +23,37 @@ body{
     width:60%;
     margin-left: 20%;
     margin-right: 20%;
-    transition: ;
 }
 
 .ui.items>.item>.content a:not(.ui) {
     display: block;
+}
+
+.right-nav-button {
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 0px inset;
+    display: inline-block;
+    background: inherit;
+    padding: 8px 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#acuity-button:hover , #ka-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.description a, .description p {
+    display: inline;
+}
+
+#main-logo {
+    height: 50%;
+    width: 90%;
 }
