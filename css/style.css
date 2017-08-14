@@ -23,6 +23,7 @@ body{
     width:60%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 5vh;
 }
 
 .ui.items>.item>.content a:not(.ui) {
@@ -51,6 +52,7 @@ body{
 
 .description a, .description p {
     display: inline;
+    overflow: hidden;
 }
 
 #main-logo {
